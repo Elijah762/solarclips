@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<main>
+    <section class="py-3">
+        <!-- Carousel of images -->
+        <div id="bannerImages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators text-center d-none d-md-block">
+                <button type="button" data-bs-target="#bannerImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerImages" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerImages" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner img-fluid">
+                <div class="carousel-item active">
+                    <img src="{% static 'store/images/bannerImage1.jpg' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'store/images/bannerImage2.jpg' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'store/images/bannerImage3.jpg' %}" class="d-block w-100">
+                </div>
+                <button type="button" class="carousel-control-next" data-bs-target="#bannerImages" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <button type="button" class="carousel-control-prev" data-bs-target="#bannerImages" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- Newest Addition -->
+        <!-- Doesn't look good, so it should be changed -->
+        <div class="container border text-center py-5 col-md-4">
+            <h4>Newest Additions</h4>
+        </div>
+        </div>
+        <!-- Product images -->
+        <!-- The images are placed in cards and each card is placed in a col div -->
+        <!-- Not responsive when on mobile, so it might be changed soon -->
+            <div class="container py-4">
+                <!-- This is where the django db is inputted based on item models  -->
+                {% for item in item_list%}
+                <div class="post-entry">
+                    <a href="{% url 'item_detail' item.pk %}">
+                    <div class="card" style="width:18rem;">
+                        <img class="card-img-top" width="40" src="{{item.photo.url}}">
+                    </a>
+                        <div class="card-body">
+                            <p class="card-text">{{ item.item_name }}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                {% endfor %}
+                
+                <div class="row">
+                    <div class="col-md-3 col-sm-1">
+                        <div class="card" style="width:18rem;">
+                            <img class="card-img-top" width="40" src="{% static 'store/images/productImages/productSprite1.jpg' %}">
+                            <div class="card-body">
+                                <p class="card-text">Product 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-1">
+                        <div class="card" style="width:18rem;">
+                            <img class="card-img-top" width="100%" src="{% static 'store/images/productImages/productSprite2.jpg' %}">
+                            <div class="card-body">
+                                <p class="card-text">Product 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-1">
+                        <div class="card" style="width:18rem;">
+                            <img class="card-img-top" src="{% static 'store/images/productImages/productSprite3.jpg' %}">
+                            <div class="card-body">
+                                <p class="card-text">Product 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-1">
+                        <div class="card" style="width:18rem;">
+                            <img class="card-img-top" width="100%" src="{% static 'store/images/productImages/productSprite2.jpg' %}">
+                            <div class="card-body">
+                                <p class="card-text">Product 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <!-- Anything else from the homepage can go here-->
+    </section>
+</main>
+
+{% endblock content %}
