@@ -43,6 +43,4 @@ class Order(models.Model):
   food = models.ForeignKey(Food, on_delete=models.CASCADE)
   quantity = models.PositiveIntegerField()
 
-
-
 # Create your models here.
