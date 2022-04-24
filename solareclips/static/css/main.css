@@ -1,0 +1,53 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.bgImage {
+    background: url("/static/images/solareclipsbck.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+@font-face {
+  font-family: arcadeFont;
+  src: url("../fonts/ArcadeClassic.ttf");
+}
+
+h1 {
+    font-family: arcadeFont;
+}
+
+.navbar {
+    font-family: arcadeFont;
+    font-size: 25px;
+}
+
+.card-title  {
+   font-family: arcadeFont;
+    font-size: 35px;
+}
+
+.card-subtitle{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.card-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.list-group {
+	padding-top: 80px;
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+a {
+    font-family: 'Press Start 2P', cursive;
+}
