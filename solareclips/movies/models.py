@@ -14,7 +14,7 @@ class Movie(models.Model):
   title = models.CharField(max_length=50)
   description = models.CharField(max_length=350)
   esrb = models.CharField(max_length=5)
-  cover = models.ImageField(null=True, upload_to='images')
+  cover = models.ImageField(null=True, upload_to='assets')
   director = models.CharField(max_length=50)
   starring = models.CharField(max_length=200)
  

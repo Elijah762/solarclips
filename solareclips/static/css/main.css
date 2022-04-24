@@ -7,15 +7,15 @@ body{
 	background-color: floralwhite;
 }
 .bgImage {
-    background: url("../Images/solareclipsbck.jpg");
+    background: url("../Images/solareclips.png");
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat:repeat-x;
 }
 
 .bgImage2 {
     background: url("../Images/contact.jpg");
     background-size: cover;
-    background-repeat:repeat-y;
+    background-repeat: no-repeat;
 }
 .movieBgImage {
     background: url("../Images/movie.png");
@@ -60,7 +60,7 @@ h1 {
 	margin: 0 0 0 -2070px; /*-2400 b4*/
 	position: relative;
 	-webkit-animation-name: slide_animation;
-	-webkit-animation-duration: 30s;
+	-webkit-animation-duration: 60s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-play-state: running;
@@ -77,7 +77,7 @@ h1 {
     font-family: arcadeFont;
     font-size: 25px;
 }
-
+ 
 p {
     font-family: 'Press Start 2P', cursive;
     font-size: 13px;
@@ -86,4 +86,8 @@ p {
 
 a {
     font-family: 'Press Start 2P', cursive;
+}
+
+.card {
+	background-color:orange;
 }
