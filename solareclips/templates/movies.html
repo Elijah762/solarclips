@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<style>
+.div1 {
+  	border: 1px solid black;
+  	height: 800px;
+  	width: 1440px;
+		background: url("{% static 'Images/movie.png' %}");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.div2 {
+  	border: 1px solid black;
+  	height: 800px;
+  	width: 1440px;
+  	background: url("{% static 'Images/contact.png' %}");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+</style>
+<body>
+	<div class="div1">
+	</div>
+	<div class="div2">
+	</div>
+</body>
+</html>
+{% endblock content %}

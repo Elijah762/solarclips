@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="movie-entry">
+  <h2>{{ movie.name }}</h2>
+  <p>{{movie.description}}</p>
+  <a href="{% url 'reservation' %}">
+  <button>Get Tickets!</button>
+  </a>
+</div>
+{% endblock content %}

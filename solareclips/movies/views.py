@@ -17,4 +17,7 @@ class MovieDetailView(TemplateView):
 
 class AboutView(TemplateView):
   template_name = 'about.html'
+
+class MovieMorePageView(TemplateView):
+  template_name = 'movies.html'
 # Create your views here.
