@@ -1,0 +1,94 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/*
+body{
+	padding: 0;
+	margin: 0;
+	background-color: floralwhite;
+}
+*/
+.bgImage {
+    background: url("../Images/solareclipsbck.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.bgImage2 {
+    background: url("../Images/contact.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.movieBgImage {
+    background: url("../Images/movie.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+@font-face {
+  font-family: arcadeFont;
+  src: url("../fonts/ArcadeClassic.ttf");
+}
+
+h1 {
+
+}
+
+.slider-frame{
+	overflow: hidden;
+	height: 250px; /*250 b4*/
+	width: 1435px; /*3600 b4*/
+	margin-left: -20px;
+	margin-top: 142px;
+}
+
+@-webkit-keyframes slide_animation{
+	0% {left:0px;}
+	10% {left:0px;}
+	20% {left:1200px;}
+	30% {left:1200px;}
+	40% {left:2400px;}
+	50% {left:2400px;}
+	60% {left:1200px;}
+	70% {left:1200px;}
+	80% {left:0px;}
+	90% {left:0px;}
+	100% {left:0px;}
+}
+
+.slide-images{
+	width: 3600px;
+	height: 800px;
+	margin: 0 0 0 -2070px; /*-2400 b4*/
+	position: relative;
+	-webkit-animation-name: slide_animation;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+
+.img-container{
+	height: 250px; /*800 b4*/
+	width: 300px;
+	position: relative;
+	float: left;
+}
+
+.navbar {
+    font-family: arcadeFont;
+    font-size: 25px;
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+a {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.topnav-right {
+	float: right;
+}
