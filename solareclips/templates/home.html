@@ -1,26 +1,13 @@
 <!doctype html>
+{% extends "base.html" %}
 {% load static %}
+{% block content %}
 <html>
-<head>
-<meta charset="utf-8">
-<title>solareclips</title>
-<link rel="stylesheet" href="css/main.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
-</head>
-
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav"> <a class="nav-link" href="{% url 'home' %}">HOME</a> <a class="nav-link" href="{% url 'movies' %}">MOVIES</a> <a class="nav-link" href="{% url 'home' %}">FRIENDS</a></div>
-        </div>
-    </div>
-</nav>
+<head> 
     <div class="container-fluid min-vh-100 d-flex flex-column bgImage">
         <div class="container-fluid min-vh-100 d-flex flex-column">
 			<div class="slider-frame">
-				<div class="slide-images">					
+				<div class="slide-images">
 					<div class="img-container">
 						<img src="{% static 'Images/buzzz.png' %}">
 					</div>
@@ -46,7 +33,7 @@
 						<img src="{% static 'Images/despicable.jpg' %}">
 					</div>	
 					<div class="img-container">
-						<img src="{% static 'Images/monster.png' %}">
+						<img src="{% static 'Images/monster.jpg' %}">
 					</div>	
 					<div class="img-container">
 						<img src="{% static 'Images/interstellar.jpeg' %}">
@@ -73,9 +60,66 @@
 						<img src="{% static 'Images/minion.png' %}">
 					</div>						
 				</div>
-			</div>			
+			</div>		
+			<div class="slider-frame">
+				<div class="slide-images">
+					<div class="img-container">
+						<img src="{% static 'Images/buzzz.png' %}">
+					</div>
+					<div class="img-container">
+						<img src="{% static 'Images/dr.png' %}">
+					</div>
+					<div class="img-container">
+						<img src="{% static 'Images/minion.png' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/parasite.jpeg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/irong.jpeg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/coraline.jpeg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/avengers.png' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/despicable.jpg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/monster.jpg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/interstellar.jpeg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/aladdin.jpeg' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/herc.png' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/monster.jpg' %}">
+					</div>
+					<div class="img-container">
+						<img src="{% static 'Images/minion.png' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/minion.png' %}">
+					</div>	
+					<div class="img-container">
+						<img src="{% static 'Images/minion.png' %}">
+					</div>
+					<div class="img-container">
+						<img src="{% static 'Images/minion.png' %}">
+					</div>						
+				</div>
+			</div>				
 		</div>
+		
 	</div>
 
 </body>
 </html>
+{%endblock content %}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -40,6 +41,10 @@ html {
   display: table;
 }
 
+.subtitle {
+  color:orange;
+}
+
 .title {
   color: grey;
 }
@@ -60,10 +65,24 @@ html {
   background-color: #555;
 }
 
+h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
+
+  .bgImage {
+    background: url("../Images/solar_bg.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
 }/* CSS Document */
 
