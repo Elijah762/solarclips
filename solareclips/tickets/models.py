@@ -1,3 +1,5 @@
+from distutils.command.upload import upload
+from email.mime import image
 from tkinter import CASCADE
 from django.db import models
 from movies.models import Movie
@@ -29,6 +31,18 @@ class Ticket(models.Model):
 
   def __str__(self):
     return 'Ticket ID: ' + str(self.tick_id)
+
+class Food(models.Model):
+  name = models.CharField(max_length=50)
+  picture = models.ImageField(null=True, upload_to='images/')
+  price = models.DecimalField(max_digits=6, decimal_places=2)
+  stock = models.PositiveIntegerField()
+
+class Order(models.Model):
+  tick = models.ForeignKey(Ticket, on_delete=models.CASCADE)
+  food = models.ForeignKey(Food, on_delete=models.CASCADE)
+  quantity = models.PositiveIntegerField()
+
 
 
 # Create your models here.

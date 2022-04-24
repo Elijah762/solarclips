@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'movies.apps.MoviesConfig',
     'accounts.apps.AccountsConfig',
     'tickets.apps.TicketsConfig',
+    'social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [

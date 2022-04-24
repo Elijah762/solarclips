@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include("movies.urls")),
     path('profile/', include("django.contrib.auth.urls")),
     path('profile/', include('accounts.urls')),
+    path('social', include('social.urls'))
 ]
