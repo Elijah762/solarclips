@@ -5,7 +5,7 @@ from .models import Movie
 
 class HomePageView(TemplateView):
   model = Movie
-  template_name = 'home_example.html'
+  template_name = 'home.html'
 
 class MoviePageView(TemplateView):
   model = Movie
