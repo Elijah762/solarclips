@@ -14,12 +14,21 @@ HOW TO RUN
 Before running the server you must...
 python -m pip install --user virtualenv 
 
+[In the second solarclips folder]
 Windows > .venv\Scripts\Activate.ps1 
 macOS > source .venv/bin/activate
 
+[cd .. out of folder and]
 Download dependeinces by running this in root:
 pip install -r requirements.txt
 
+[Create super user to gain admin access]
+> python manage.py createsuperuser
+
+Navigate to 127.0.0.1:8000/admin/ for admin login
+Navigate to 127.0.0.1:8000 for shopper view
+
+[cd into second solarclips and run]
 Once all dependecies are downloaded run > python manage.py runserver
 
 REQUIREMENTS
