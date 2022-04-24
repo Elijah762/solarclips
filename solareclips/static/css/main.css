@@ -28,10 +28,6 @@ body{
   src: url("../fonts/ArcadeClassic.ttf");
 }
 
-h1 {
-
-}
-
 .slider-frame{
 	overflow: hidden;
 	height: 250px; /*250 b4*/
@@ -82,10 +78,20 @@ p {
     font-family: 'Press Start 2P', cursive;
     font-size: 13px;
     padding-top: 10px;
+		color: white;
 }
 
 a {
     font-family: 'Press Start 2P', cursive;
+}
+
+.h2 {
+	font-family: arcadeFont;
+}
+
+.label {
+	font-family: arcadeFont;
+	color:white;
 }
 
 .card {
