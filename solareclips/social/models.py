@@ -3,7 +3,7 @@ from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth.models import User
 
-class Reviews(models.Model):
+class Review(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   message = models.CharField(max_length=500)
   rating = models.SmallIntegerField()
