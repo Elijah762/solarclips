@@ -1,4 +1,6 @@
 # solarclips
+Authors: Adittya Das, Elijah Moya, Izzy Montemayor, Mei Sullum
+
 WE ARE SOLARECLIPS
 ------------------
 SOLARECLIPS combines social media and movie ticketing into a single application. Our app allows movie enthusiasts to friend others, create reviews, buy movie tickets, receive movie and concession discounts, and have an overall pleasant experience within our site. Not only can our users create their own reviews, but they can explore other reviews and use our app to message others, which is easily accessible!
