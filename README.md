@@ -1,5 +1,6 @@
-# solarclips
+# SOLARECLIPSE
 Authors: Adittya Das, Elijah Moya, Izzy Montemayor, Mei Sullum
+Website: www.solarclipse.tech
 
 WE ARE SOLARECLIPS
 ------------------
